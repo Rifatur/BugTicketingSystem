@@ -15,12 +15,6 @@ project-based bug tracking and ticketing system built with **ASP.NET Core 10 Min
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
-- [Configuration](#-configuration)
-- [API Documentation](#-api-documentation)
-- [User Guide](#-user-guide)
-- [Workflow](#-workflow)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ## 🎯 Overview
 
