@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Ticketing System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed left-0 top-0 h-full w-64 bg-slate-900 text-white shadow-xl z-50 transform transition-transform duration-300">
+        <div class="p-6 border-b border-slate-700">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">BugTracker</h1>
+                    <p class="text-xs text-slate-400">v1.0</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="p-4 space-y-2">
+            <a href="#" data-page="dashboard" class="nav-link active flex items-center space-x-3 px-4 py-3 rounded-lg transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#" data-page="tickets" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+                <span>All Tickets</span>
+                <span id="open-tickets-badge" class="ml-auto bg-red-500 text-xs px-2 py-0.5 rounded-full">0</span>
+            </a>
+
+            <a href="#" data-page="create" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+                <span>Create Bug</span>
+            </a>
+
+            <a href="#" data-page="reports" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <span>Reports</span>
+            </a>
+
+            <a href="#" data-page="analytics" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                </svg>
+                <span>Analytics</span>
+            </a>
+        </nav>
+
+        <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-slate-700">
+            <div class="flex items-center space-x-3">
+                <img src="https://www.vecteezy.com/vector-art/20032281-questioin-and-answer-vector-icon-design"
+                     class="w-10 h-10 rounded-full" alt="User">
+                <div>
+                    <p class="text-sm font-medium">QA User</p>
+                    <p class="text-xs text-slate-400">qa@playon24.com</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-64 min-h-screen">
+        <!-- Top Header -->
+        <header class="bg-white border-b border-gray-200 sticky top-0 z-40">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center space-x-4">
+                    <button id="sidebar-toggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <h2 id="page-title" class="text-2xl font-bold text-gray-800">Dashboard</h2>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Search -->
+                    <div class="relative">
+                        <input type="text" id="global-search" placeholder="Search bugs..."
+                               class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="relative">
+                        <button id="notifications-btn" class="p-2 rounded-lg hover:bg-gray-100 relative">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span id="notification-badge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full hidden">0</span>
+                        </button>
+
+                        <!-- Notifications Dropdown -->
+                        <div id="notifications-dropdown" class="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 hidden z-50">
+                            <div class="p-4 border-b border-gray-200">
+                                <h3 class="font-semibold text-gray-800">Notifications</h3>
+                            </div>
+                            <div id="notifications-list" class="max-h-96 overflow-y-auto">
+                                <p class="p-4 text-gray-500 text-center">No notifications</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Create -->
+                    <button id="quick-create-btn" class="flex items-center space-x-2 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                        <span>New Bug</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div id="page-content" class="p-6">
+            <!-- Dashboard Page -->
+            <div id="dashboard-page" class="page-section">
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="stat-card bg-white rounded-xl shadow-sm p-6 border-l-4 border-blue-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Total Bugs</p>
+                                <p id="stat-total" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">
+                            <span id="stat-today" class="text-green-600 font-medium">+0</span> today
+                        </p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-xl shadow-sm p-6 border-l-4 border-yellow-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Open Bugs</p>
+                                <p id="stat-open" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                            </div>
+                            <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">Needs attention</p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-xl shadow-sm p-6 border-l-4 border-red-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Critical Bugs</p>
+                                <p id="stat-critical" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                            </div>
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">
+                            <span id="stat-overdue" class="text-red-600 font-medium">0</span> overdue
+                        </p>
+                    </div>
+
+                    <div class="stat-card bg-white rounded-xl shadow-sm p-6 border-l-4 border-green-500">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm font-medium text-gray-500">Resolved Today</p>
+                                <p id="stat-resolved" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                            </div>
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Avg: <span id="stat-avg-time" class="font-medium">0h</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Bug Trends (Last 7 Days)</h3>
+                        <div><canvas id="trend-chart" height="250"></canvas></div>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Bugs by Priority</h3>
+                        <div> <canvas id="priority-chart" height="250"></canvas></div>
+
+                    </div>
+                </div>
+
+                <!-- Recent & Critical Bugs -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Recent Bugs -->
+                    <div class="bg-white rounded-xl shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-lg font-semibold text-gray-800">Recent Bugs</h3>
+                        </div>
+                        <div id="recent-bugs-list" class="divide-y divide-gray-200">
+                            <p class="p-6 text-gray-500 text-center">Loading...</p>
+                        </div>
+                    </div>
+
+                    <!-- Critical Bugs -->
+                    <div class="bg-white rounded-xl shadow-sm">
+                        <div class="p-6 border-b border-gray-200 flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-800">Critical Bugs</h3>
+                            <span class="bg-red-100 text-red-600 text-sm px-3 py-1 rounded-full" id="critical-count">0</span>
+                        </div>
+                        <div id="critical-bugs-list" class="divide-y divide-gray-200">
+                            <p class="p-6 text-gray-500 text-center">No critical bugs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Tickets Page -->
+            <div id="tickets-page" class="page-section hidden">
+                <!-- Filters -->
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                    <div class="flex flex-wrap items-center gap-4">
+                        <div class="flex-1 min-w-[200px]">
+                            <input type="text" id="filter-search" placeholder="Search by title or ticket ID..."
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                        </div>
+
+                        <select id="filter-project" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                            <option value="">All Projects</option>
+                        </select>
+
+                        <select id="filter-status" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                            <option value="">All Status</option>
+                            <option value="Open">Open</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Fixed">Fixed</option>
+                            <option value="Verified">Verified</option>
+                            <option value="Closed">Closed</option>
+                            <option value="Reopened">Reopened</option>
+                        </select>
+
+                        <select id="filter-priority" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                            <option value="">All Priority</option>
+                            <option value="Critical">Critical</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+
+                        <select id="filter-developer" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                            <option value="">All Developers</option>
+                        </select>
+
+                        <button id="apply-filters" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                            Apply Filters
+                        </button>
+
+                        <button id="clear-filters" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tickets Table -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Ticket</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Title</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Project</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Priority</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Assigned To</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Deadline</th>
+                                    <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tickets-table-body" class="divide-y divide-gray-200">
+                                <tr>
+                                    <td colspan="8" class="px-6 py-8 text-center text-gray-500">Loading tickets...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div id="tickets-pagination" class="px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+                        <p class="text-sm text-gray-500">
+                            Showing <span id="showing-from">0</span> to <span id="showing-to">0</span> of <span id="total-tickets">0</span> tickets
+                        </p>
+                        <div class="flex space-x-2" id="pagination-buttons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Bug Page -->
+            <div id="create-page" class="page-section hidden">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white rounded-xl shadow-sm">
+                        <div class="p-6 border-b border-gray-200">
+                            <h3 class="text-xl font-semibold text-gray-800">Log New Bug</h3>
+                            <p class="text-gray-500 mt-1">Fill in the details to create a new bug ticket</p>
+                        </div>
+
+                        <form id="create-bug-form" class="p-6 space-y-6">
+                            <!-- Project & Module -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                                        Project <span class="text-red-500">*</span>
+                                    </label>
+                                    <select id="bug-project" name="project_id" required
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                        <option value="">Select Project</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Module</label>
+                                    <select id="bug-module" name="module_id"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                        <option value="">Select Module</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Title -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Bug Title <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="bug-title" name="title" required
+                                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                       placeholder="Brief description of the bug">
+                            </div>
+
+                            <!-- Description -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    Description <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="bug-description" name="description" rows="4" required
+                                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                          placeholder="Detailed description of the bug"></textarea>
+                            </div>
+
+                            <!-- Steps to Reproduce -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Steps to Reproduce</label>
+                                <textarea id="bug-steps" name="steps_to_reproduce" rows="3"
+                                          class="w-full px-4 py-2 border border-gray-300 rounded-lg                                           focus:ring-2 focus:ring-indigo-500"
+                                          placeholder="1. Go to...&#10;2. Click on...&#10;3. Observe..."></textarea>
+                            </div>
+
+                            <!-- Expected vs Actual -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Expected Result</label>
+                                    <textarea id="bug-expected" name="expected_result" rows="3"
+                                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                              placeholder="What should happen"></textarea>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Actual Result</label>
+                                    <textarea id="bug-actual" name="actual_result" rows="3"
+                                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                              placeholder="What actually happened"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Priority & Severity -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Priority</label>
+                                    <select id="bug-priority" name="priority"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                        <option value="Low">Low</option>
+                                        <option value="Medium" selected>Medium</option>
+                                        <option value="High">High</option>
+                                        <option value="Critical">Critical</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Severity</label>
+                                    <select id="bug-severity" name="severity"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                        <option value="Minor" selected>Minor</option>
+                                        <option value="Major">Major</option>
+                                        <option value="Blocker">Blocker</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Assignment & Deadline -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Assign To</label>
+                                    <select id="bug-developer" name="assigned_developer_id"
+                                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                        <option value="">Unassigned</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Estimated Fix Time (hours)</label>
+                                    <input type="number" id="bug-estimate" name="estimated_fix_hours" min="0" step="0.5"
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                           placeholder="e.g., 4">
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Deadline</label>
+                                    <input type="date" id="bug-deadline" name="deadline"
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                                </div>
+                            </div>
+
+                            <!-- Environment Details -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Environment</label>
+                                    <input type="text" id="bug-environment" name="environment"
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                           placeholder="e.g., Production, Staging">
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Browser</label>
+                                    <input type="text" id="bug-browser" name="browser"
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                           placeholder="e.g., Chrome 120">
+                                </div>
+
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Operating System</label>
+                                    <input type="text" id="bug-os" name="os"
+                                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                                           placeholder="e.g., Windows 11">
+                                </div>
+                            </div>
+
+                            <!-- Attachments -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Attachments</label>
+                                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-indigo-500 transition-colors">
+                                    <input type="file" id="bug-attachments" name="attachments[]" multiple class="hidden"
+                                           accept="image/*,.pdf,.log,.txt,.json">
+                                    <label for="bug-attachments" class="cursor-pointer">
+                                        <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <p class="mt-2 text-sm text-gray-600">
+                                            <span class="text-indigo-600 font-medium">Click to upload</span> or drag and drop
+                                        </p>
+                                        <p class="text-xs text-gray-500">Screenshots, logs, or test data (max 10MB each)</p>
+                                    </label>
+                                </div>
+                                <div id="attachment-preview" class="mt-4 flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <!-- Submit Buttons -->
+                            <div class="flex items-center justify-end space-x-4 pt-6 border-t border-gray-200">
+                                <button type="button" id="reset-form" class="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                                    Reset
+                                </button>
+                                <button type="submit" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center space-x-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                    </svg>
+                                    <span>Create Bug Ticket</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reports Page -->
+            <div id="reports-page" class="page-section hidden">
+                <!-- Report Type Tabs -->
+                <div class="bg-white rounded-xl shadow-sm mb-6">
+                    <div class="border-b border-gray-200">
+                        <nav class="flex -mb-px">
+                            <button class="report-tab active px-6 py-4 text-sm font-medium border-b-2 border-indigo-500 text-indigo-600" data-report="daily">
+                                Daily Report
+                            </button>
+                            <button class="report-tab px-6 py-4 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-report="weekly">
+                                Weekly Report
+                            </button>
+                            <button class="report-tab px-6 py-4 text-sm font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700" data-report="monthly">
+                                Monthly Report
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- Date Selector -->
+                    <div class="p-4 flex items-center space-x-4">
+                        <div id="daily-date-picker">
+                            <label class="text-sm font-medium text-gray-700 mr-2">Date:</label>
+                            <input type="date" id="report-date" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div id="weekly-date-picker" class="hidden">
+                            <label class="text-sm font-medium text-gray-700 mr-2">Week Ending:</label>
+                            <input type="date" id="report-week-end" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div id="monthly-date-picker" class="hidden">
+                            <label class="text-sm font-medium text-gray-700 mr-2">Month:</label>
+                            <input type="month" id="report-month" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <button id="generate-report" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                            Generate Report
+                        </button>
+                        <button id="export-report" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors flex items-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                            </svg>
+                            <span>Export PDF</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Report Content -->
+                <div id="report-content">
+                    <!-- Daily Report Section -->
+                    <div id="daily-report" class="report-section">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-500">Bugs Logged Today</p>
+                                        <p id="daily-logged" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                                    </div>
+                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-500">Bugs Resolved Today</p>
+                                        <p id="daily-resolved" class="text-3xl font-bold text-gray-800 mt-1">0</p>
+                                    </div>
+                                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-sm font-medium text-gray-500">Pending Critical</p>
+                                        <p id="daily-critical" class="text-3xl font-bold text-red-600 mt-1">0</p>
+                                    </div>
+                                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Priority Breakdown -->
+                        <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Today's Bugs by Priority</h4>
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="text-center p-4 bg-red-50 rounded-lg">
+                                    <p class="text-2xl font-bold text-red-600" id="daily-priority-critical">0</p>
+                                    <p class="text-sm text-gray-600">Critical</p>
+                                </div>
+                                <div class="text-center p-4 bg-orange-50 rounded-lg">
+                                    <p class="text-2xl font-bold text-orange-600" id="daily-priority-high">0</p>
+                                    <p class="text-sm text-gray-600">High</p>
+                                </div>
+                                <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                                    <p class="text-2xl font-bold text-yellow-600" id="daily-priority-medium">0</p>
+                                    <p class="text-sm text-gray-600">Medium</p>
+                                </div>
+                                <div class="text-center p-4 bg-green-50 rounded-lg">
+                                    <p class="text-2xl font-bold text-green-600" id="daily-priority-low">0</p>
+                                    <p class="text-sm text-gray-600">Low</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bugs Lists -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-white rounded-xl shadow-sm">
+                                <div class="p-4 border-b border-gray-200">
+                                    <h4 class="font-semibold text-gray-800">Bugs Logged</h4>
+                                </div>
+                                <div id="daily-logged-list" class="max-h-96 overflow-y-auto divide-y divide-gray-200">
+                                    <p class="p-4 text-gray-500 text-center">No bugs logged</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-white rounded-xl shadow-sm">
+                                <div class="p-4 border-b border-gray-200">
+                                    <h4 class="font-semibold text-gray-800">Pending Critical Bugs</h4>
+                                </div>
+                                <div id="daily-critical-list" class="max-h-96 overflow-y-auto divide-y divide-gray-200">
+                                    <p class="p-4 text-gray-500 text-center">No critical bugs pending</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weekly Report Section -->
+                    <div id="weekly-report" class="report-section hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <p class="text-sm font-medium text-gray-500">Total Opened</p>
+                                <p id="weekly-opened" class="text-3xl font-bold text-blue-600 mt-1">0</p>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <p class="text-sm font-medium text-gray-500">Total Closed</p>
+                                <p id="weekly-closed" class="text-3xl font-bold text-green-600 mt-1">0</p>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <p class="text-sm font-medium text-gray-500">Net Change</p>
+                                <p id="weekly-net" class="text-3xl font-bold mt-1">0</p>
+                            </div>
+                            <div class="bg-white rounded-xl shadow-sm p-6">
+                                <p class="text-sm font-medium text-gray-500">Avg Resolution Time</p>
+                                <p id="weekly-avg-time" class="text-3xl font-bold text-gray-800 mt-1">0h</p>
+                            </div>
+                        </div>
+
+                        <!-- Weekly Trend Chart -->
+                        <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Bug Trends (Opened vs Closed)</h4>
+                            <div><canvas id="weekly-trend-chart" height="300"></canvas></div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <!-- Top Recurring Modules -->
+                            <div class="bg-white rounded-xl shadow-sm">
+                                <div class="p-4 border-b border-gray-200">
+                                    <h4 class="font-semibold text-gray-800">Top Recurring Modules with Issues</h4>
+                                </div>
+                                <div id="weekly-modules-list" class="divide-y divide-gray-200">
+                                    <p class="p-4 text-gray-500 text-center">No data available</p>
+                                </div>
+                            </div>
+
+                            <!-- Developer Performance -->
+                            <div class="bg-white rounded-xl shadow-sm">
+                                <div class="p-4 border-b border-gray-200">
+                                    <h4 class="font-semibold text-gray-800">Developer Performance</h4>
+                                </div>
+                                <div id="weekly-developer-list" class="divide-y divide-gray-200">
+                                    <p class="p-4 text-gray-500 text-center">No data available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Report Section -->
+                    <div id="monthly-report" class="report-section hidden">
+                        <!-- Release Readiness Score -->
+                        <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h4 class="text-lg font-semibold text-gray-800">Release Readiness Score</h4>
+                                <span id="readiness-score" class="text-4xl font-bold text-green-600">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-4">
+                                <div id="readiness-bar" class="bg-green-600 h-4 rounded-full transition-all duration-500" style="width: 0%"></div>
+                            </div>
+                            <div class="grid grid-cols-3 gap-4 mt-4 text-center">
+                                <div>
+                                    <p class="text-2xl font-bold text-gray-800" id="monthly-open">0</p>
+                                    <p class="text-sm text-gray-500">Open Bugs</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-gray-800" id="monthly-closed">0</p>
+                                    <p class="text-sm text-gray-500">Closed Bugs</p>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-red-600" id="monthly-critical">0</p>
+                                    <p class="text-sm text-gray-500">Critical Open</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Defect Density by Project -->
+                        <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Defect Density per Project</h4>
+                            <div><canvas id="defect-density-chart" height="300"></canvas></div>
+
+                        </div>
+
+                        <!-- Developer Performance -->
+                        <div class="bg-white rounded-xl shadow-sm">
+                            <div class="p-4 border-b border-gray-200">
+                                <h4 class="font-semibold text-gray-800">Developer Performance (Bugs Resolved)</h4>
+                            </div>
+                            <div class="p-6">
+                                <div id="monthly-developer-performance" class="space-y-4">
+                                    <p class="text-gray-500 text-center">No data available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Page -->
+            <div id="analytics-page" class="page-section hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                    <!-- Bugs by Status -->
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Bugs by Status</h4>
+                        <div><canvas id="status-chart" height="300"></canvas></div>
+
+                    </div>
+
+                    <!-- Bugs by Project -->
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Bugs by Project</h4>
+                        <div><canvas id="project-chart" height="300"></canvas></div>
+
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Bugs by Developer -->
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Workload by Developer</h4>
+                        <div><canvas id="developer-chart" height="300"></canvas></div>
+
+                    </div>
+
+                    <!-- Resolution Time Distribution -->
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Weekly Bug Trend</h4>
+                        <div><canvas id="analytics-trend-chart" height="300"></canvas></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bug Detail Modal -->
+    <div id="bug-detail-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <div>
+                    <span id="modal-ticket-id" class="text-sm font-mono text-indigo-600 bg-indigo-50 px-2 py-1 rounded"></span>
+                    <h3 id="modal-title" class="text-xl font-semibold text-gray-800 mt-2"></h3>
+                </div>
+                <button id="close-modal" class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="overflow-y-auto max-h-[calc(90vh-180px)]">
+                <div class="p-6">
+                    <!-- Status & Priority Badges -->
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span id="modal-status" class="status-badge"></span>
+                        <span id="modal-priority" class="priority-badge"></span>
+                        <span id="modal-severity" class="severity-badge"></span>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="flex flex-wrap gap-2 mb-6 p-4 bg-gray-50 rounded-lg">
+                        <select id="modal-status-select" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-indigo-500">
+                            <option value="Open">Open</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Fixed">Fixed</option>
+                            <option value="Verified">Verified</option>
+                            <option value="Closed">Closed</option>
+                            <option value="Reopened">Reopened</option>
+                        </select>
+                        <select id="modal-developer-select" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-indigo-500">
+                            <option value="">Reassign Developer</option>
+                        </select>
+                        <button id="modal-save-changes" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 transition-colors">
+                            Save Changes
+                        </button>
+                    </div>
+
+                    <!-- Bug Details Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Project</h4>
+                            <p id="modal-project" class="text-gray-800"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Module</h4>
+                            <p id="modal-module" class="text-gray-800"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Assigned To</h4>
+                            <p id="modal-developer" class="text-gray-800"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Deadline</h4>
+                            <p id="modal-deadline" class="text-gray-800"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Created</h4>
+                            <p id="modal-created" class="text-gray-800"></p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-1">Environment</h4>
+                            <p id="modal-environment" class="text-gray-800"></p>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-gray-500 mb-2">Description</h4>
+                        <div id="modal-description" class="prose prose-sm max-w-none text-gray-800 bg-gray-50 p-4 rounded-lg"></div>
+                    </div>
+
+                    <!-- Steps to Reproduce -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-gray-500 mb-2">Steps to Reproduce</h4>
+                        <div id="modal-steps" class="prose prose-sm max-w-none text-gray-800 bg-gray-50 p-4 rounded-lg whitespace-pre-line"></div>
+                    </div>
+
+                    <!-- Expected vs Actual -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-2">Expected Result</h4>
+                            <div id="modal-expected" class="text-gray-800 bg-green-50 p-4 rounded-lg"></div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-500 mb-2">Actual Result</h4>
+                            <div id="modal-actual" class="text-gray-800 bg-red-50 p-4 rounded-lg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Attachments -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-gray-500 mb-2">Attachments</h4>
+                        <div id="modal-attachments" class="flex flex-wrap gap-2">
+                            <p class="text-gray-500">No attachments</p>
+                        </div>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="mb-6">
+                        <h4 class="text-sm font-medium text-gray-500 mb-2">Comments</h4>
+                        <div id="modal-comments" class="space-y-4 mb-4">
+                            <p class="text-gray-500 text-center py-4">No comments yet</p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <textarea id="new-comment" rows="2" placeholder="Add a comment..."
+                                      class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"></textarea>
+                            <button id="add-comment" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+                                Post
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Activity Log -->
+                    <div>
+                        <h4 class="text-sm font-medium text-gray-500 mb-2">Activity Log</h4>
+                        <div id="modal-activity" class="space-y-2 max-h-48 overflow-y-auto">
+                            <p class="text-gray-500 text-center py-4">No activity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 right-4 z-50 hidden">
+        <div class="bg-gray-800 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3">
+            <span id="toast-icon"></span>
+            <span id="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="js/database.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/app.js"></script>
+    <!--<script>
+        fetch('/api/hello')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('result').innerText = data;
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error;
+            });
+    </script>-->
+
+</body>
+</html>

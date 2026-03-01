@@ -1,0 +1,947 @@
+[
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__8",
+    "RelativePath": "api",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "System"
+    ],
+    "EndpointName": "ApiInfo"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_0",
+    "RelativePath": "api/bugs/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "projectId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "priority",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "developerId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortOrder",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "GetBugs",
+    "Summary": "Get all bugs with optional filtering and pagination"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_3",
+    "RelativePath": "api/bugs/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.DTOs.CreateBugRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "CreateBug",
+    "Summary": "Create a new bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.AttachmentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAttachmentEndpoints\u003Eb__0_0",
+    "RelativePath": "api/bugs/{bugId:int}/attachments/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Attachments"
+    ],
+    "EndpointName": "GetBugAttachments",
+    "Summary": "Get all attachments for a bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.AttachmentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAttachmentEndpoints\u003Eb__0_1",
+    "RelativePath": "api/bugs/{bugId:int}/attachments/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Attachments"
+    ],
+    "EndpointName": "UploadAttachment",
+    "Summary": "Upload an attachment to a bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.AttachmentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAttachmentEndpoints\u003Eb__0_2",
+    "RelativePath": "api/bugs/{bugId:int}/attachments/{attachmentId:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "attachmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Attachments"
+    ],
+    "EndpointName": "DeleteAttachment",
+    "Summary": "Delete an attachment"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.CommentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCommentEndpoints\u003Eb__0_0",
+    "RelativePath": "api/bugs/{bugId:int}/comments/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comments"
+    ],
+    "EndpointName": "GetBugComments",
+    "Summary": "Get all comments for a bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.CommentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCommentEndpoints\u003Eb__0_1",
+    "RelativePath": "api/bugs/{bugId:int}/comments/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.Endpoints.AddCommentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comments"
+    ],
+    "EndpointName": "AddComment",
+    "Summary": "Add a comment to a bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.CommentEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCommentEndpoints\u003Eb__0_2",
+    "RelativePath": "api/bugs/{bugId:int}/comments/{commentId:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bugId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Comments"
+    ],
+    "EndpointName": "DeleteComment",
+    "Summary": "Delete a comment"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_1",
+    "RelativePath": "api/bugs/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "GetBugById",
+    "Summary": "Get a specific bug by ID"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_4",
+    "RelativePath": "api/bugs/{id:int}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.DTOs.UpdateBugRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "UpdateBug",
+    "Summary": "Update an existing bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_5",
+    "RelativePath": "api/bugs/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "DeleteBug",
+    "Summary": "Delete a bug"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.BugEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapBugEndpoints\u003Eb__0_2",
+    "RelativePath": "api/bugs/ticket/{ticketId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Bugs"
+    ],
+    "EndpointName": "GetBugByTicketId",
+    "Summary": "Get a specific bug by ticket ID"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DashboardEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDashboardEndpoints\u003Eb__0_3",
+    "RelativePath": "api/dashboard/critical",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Dashboard"
+    ],
+    "EndpointName": "GetCriticalBugs",
+    "Summary": "Get all open critical bugs"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DashboardEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDashboardEndpoints\u003Eb__0_0",
+    "RelativePath": "api/dashboard/overview",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Dashboard"
+    ],
+    "EndpointName": "GetDashboardOverview",
+    "Summary": "Get dashboard overview statistics"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DashboardEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDashboardEndpoints\u003Eb__0_2",
+    "RelativePath": "api/dashboard/recent",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Dashboard"
+    ],
+    "EndpointName": "GetRecentBugs",
+    "Summary": "Get recently created bugs"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DashboardEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDashboardEndpoints\u003Eb__0_1",
+    "RelativePath": "api/dashboard/stats",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "period",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Dashboard"
+    ],
+    "EndpointName": "GetDashboardStats",
+    "Summary": "Get dashboard statistics with trends"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DeveloperEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeveloperEndpoints\u003Eb__0_0",
+    "RelativePath": "api/developers/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Developers"
+    ],
+    "EndpointName": "GetDevelopers",
+    "Summary": "Get all developers"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DeveloperEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeveloperEndpoints\u003Eb__0_2",
+    "RelativePath": "api/developers/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.DTOs.CreateDeveloperRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Developers"
+    ],
+    "EndpointName": "CreateDeveloper",
+    "Summary": "Create a new developer"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DeveloperEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeveloperEndpoints\u003Eb__0_1",
+    "RelativePath": "api/developers/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Developers"
+    ],
+    "EndpointName": "GetDeveloperById",
+    "Summary": "Get a specific developer by ID"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DeveloperEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeveloperEndpoints\u003Eb__0_4",
+    "RelativePath": "api/developers/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Developers"
+    ],
+    "EndpointName": "DeleteDeveloper",
+    "Summary": "Delete a developer"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.DeveloperEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapDeveloperEndpoints\u003Eb__0_3",
+    "RelativePath": "api/developers/{id:int}/bugs",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Developers"
+    ],
+    "EndpointName": "GetDeveloperBugs",
+    "Summary": "Get all bugs assigned to a developer"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.NotificationEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNotificationEndpoints\u003Eb__0_1",
+    "RelativePath": "api/notifications/{id:int}/read",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Notifications"
+    ],
+    "EndpointName": "MarkNotificationAsRead",
+    "Summary": "Mark a notification as read"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.NotificationEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNotificationEndpoints\u003Eb__0_0",
+    "RelativePath": "api/notifications/developer/{developerId:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "developerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "unreadOnly",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Notifications"
+    ],
+    "EndpointName": "GetDeveloperNotifications",
+    "Summary": "Get notifications for a developer"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.NotificationEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapNotificationEndpoints\u003Eb__0_2",
+    "RelativePath": "api/notifications/developer/{developerId:int}/read-all",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "developerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Notifications"
+    ],
+    "EndpointName": "MarkAllNotificationsAsRead",
+    "Summary": "Mark all notifications as read for a developer"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ProjectEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjectEndpoints\u003Eb__0_0",
+    "RelativePath": "api/projects/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Projects"
+    ],
+    "EndpointName": "GetProjects",
+    "Summary": "Get all projects with their modules"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ProjectEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjectEndpoints\u003Eb__0_2",
+    "RelativePath": "api/projects/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.DTOs.CreateProjectRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Projects"
+    ],
+    "EndpointName": "CreateProject",
+    "Summary": "Create a new project"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ProjectEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjectEndpoints\u003Eb__0_1",
+    "RelativePath": "api/projects/{id:int}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Projects"
+    ],
+    "EndpointName": "GetProjectById",
+    "Summary": "Get a specific project by ID"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ProjectEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjectEndpoints\u003Eb__0_4",
+    "RelativePath": "api/projects/{id:int}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Projects"
+    ],
+    "EndpointName": "DeleteProject",
+    "Summary": "Delete a project"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ProjectEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapProjectEndpoints\u003Eb__0_3",
+    "RelativePath": "api/projects/{projectId:int}/modules",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "BugTicketingSystem.Api.DTOs.CreateModuleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Projects"
+    ],
+    "EndpointName": "CreateModule",
+    "Summary": "Create a new module for a project"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ReportEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReportEndpoints\u003Eb__0_0",
+    "RelativePath": "api/reports/daily",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reports"
+    ],
+    "EndpointName": "GetDailyReport",
+    "Summary": "Get daily bug report"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ReportEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReportEndpoints\u003Eb__0_2",
+    "RelativePath": "api/reports/monthly",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reports"
+    ],
+    "EndpointName": "GetMonthlyReport",
+    "Summary": "Get monthly bug report"
+  },
+  {
+    "ContainingType": "BugTicketingSystem.Api.Endpoints.ReportEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReportEndpoints\u003Eb__0_1",
+    "RelativePath": "api/reports/weekly",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "endDate",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reports"
+    ],
+    "EndpointName": "GetWeeklyReport",
+    "Summary": "Get weekly bug report"
+  }
+]

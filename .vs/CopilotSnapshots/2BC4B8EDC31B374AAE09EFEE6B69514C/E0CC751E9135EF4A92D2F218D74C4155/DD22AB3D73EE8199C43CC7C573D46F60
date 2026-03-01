@@ -1,0 +1,178 @@
+﻿using Microsoft.EntityFrameworkCore;
+using BugTicketingSystem.Api.Models;
+
+namespace BugTicketingSystem.Api.Data
+{
+    public static class DbInitializer
+    {
+        public static async Task InitializeAsync(AppDbContext context)
+        {
+            // Apply pending migrations (recommended) instead of EnsureCreated
+            await context.Database.MigrateAsync();
+
+            // Check if data already exists
+            if (context.Projects.Any())
+            {
+                return;
+            }
+
+            // Seed Projects
+            var projects = new List<Project>
+        {
+            new() { Name = "E-Commerce Platform", Description = "Main e-commerce web application" },
+            new() { Name = "Mobile App", Description = "iOS and Android mobile application" },
+            new() { Name = "Admin Dashboard", Description = "Internal admin management system" },
+            new() { Name = "API Gateway", Description = "REST API backend services" }
+        };
+
+            await context.Projects.AddRangeAsync(projects);
+            await context.SaveChangesAsync();
+
+            // Seed Modules
+            var modules = new List<Module>
+        {
+            new() { ProjectId = 1, Name = "User Authentication" },
+            new() { ProjectId = 1, Name = "Shopping Cart" },
+            new() { ProjectId = 1, Name = "Payment Gateway" },
+            new() { ProjectId = 1, Name = "Product Catalog" },
+            new() { ProjectId = 2, Name = "Login Module" },
+            new() { ProjectId = 2, Name = "Push Notifications" },
+            new() { ProjectId = 3, Name = "User Management" },
+            new() { ProjectId = 3, Name = "Reports Module" }
+        };
+
+            await context.Modules.AddRangeAsync(modules);
+            await context.SaveChangesAsync();
+
+            // Seed Developers
+            var developers = new List<Developer>
+        {
+            new() {
+                Name = "John Smith",
+                Email = "john@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=John+Smith&background=6366f1&color=fff"
+            },
+            new() {
+                Name = "Sarah Johnson",
+                Email = "sarah@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=Sarah+Johnson&background=ec4899&color=fff"
+            },
+            new() {
+                Name = "Mike Wilson",
+                Email = "mike@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=Mike+Wilson&background=10b981&color=fff"
+            },
+            new() {
+                Name = "Emily Brown",
+                Email = "emily@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=Emily+Brown&background=f59e0b&color=fff"
+            },
+            new() {
+                Name = "David Lee",
+                Email = "david@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=David+Lee&background=3b82f6&color=fff"
+            },
+            new() {
+                Name = "QA User",
+                Email = "qa@example.com",
+                AvatarUrl = "https://ui-avatars.com/api/?name=QA+User&background=8b5cf6&color=fff"
+            }
+        };
+
+            await context.Developers.AddRangeAsync(developers);
+            await context.SaveChangesAsync();
+
+            // Seed Sample Bugs
+            var random = new Random();
+            var priorities = Enum.GetValues<Priority>();
+            var severities = Enum.GetValues<Severity>();
+            var statuses = Enum.GetValues<BugStatus>();
+
+            var bugTitles = new[]
+            {
+            "Login button not responding on mobile",
+            "Payment fails with specific card types",
+            "Cart total calculation incorrect",
+            "User profile image upload fails",
+            "Search results not sorting correctly",
+            "Email notifications delayed",
+            "Dashboard charts not loading",
+            "Password reset link expires too quickly",
+            "Order history pagination broken",
+            "Product images not displaying on iOS",
+            "Session timeout too short",
+            "Export to PDF not working",
+            "Duplicate entries in dropdown",
+            "Form validation error messages unclear",
+            "Mobile menu not closing properly"
+        };
+
+            var bugs = new List<Bug>();
+
+            for (int i = 0; i < 30; i++)
+            {
+                var createdDaysAgo = random.Next(0, 30);
+                var createdAt = DateTime.UtcNow.AddDays(-createdDaysAgo);
+                var status = statuses[random.Next(statuses.Length)];
+
+                DateTime? resolvedAt = null;
+                DateTime? closedAt = null;
+
+                if (status is BugStatus.Fixed or BugStatus.Verified or BugStatus.Closed)
+                {
+                    resolvedAt = createdAt.AddDays(random.Next(1, 5));
+                }
+
+                if (status == BugStatus.Closed)
+                {
+                    closedAt = resolvedAt?.AddDays(1);
+                }
+
+                var projectId = random.Next(1, 5);
+                var moduleIds = modules.Where(m => m.ProjectId == projectId).Select(m => m.Id).ToList();
+
+                bugs.Add(new Bug
+                {
+                    TicketId = $"BUG-{createdAt:yyMMdd}-{(i + 1):D4}",
+                    ProjectId = projectId,
+                    ModuleId = moduleIds.Any() ? moduleIds[random.Next(moduleIds.Count)] : null,
+                    Title = bugTitles[random.Next(bugTitles.Length)],
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    StepsToReproduce = "1. Navigate to the page\n2. Click on the button\n3. Observe the error",
+                    ExpectedResult = "The action should complete successfully",
+                    ActualResult = "An error occurs or nothing happens",
+                    Priority = priorities[random.Next(priorities.Length)],
+                    Severity = severities[random.Next(severities.Length)],
+                    Status = status,
+                    AssignedDeveloperId = random.Next(1, 6),
+                    ReportedById = 6, // QA User
+                    EstimatedFixHours = random.Next(1, 20),
+                    Deadline = DateOnly.FromDateTime(DateTime.UtcNow.AddDays(random.Next(1, 14))),
+                    Environment = new[] { "Production", "Staging", "Development" }[random.Next(3)],
+                    Browser = new[] { "Chrome 120", "Firefox 121", "Safari 17", "Edge 120" }[random.Next(4)],
+                    Os = new[] { "Windows 11", "macOS Sonoma", "Ubuntu 22.04", "iOS 17" }[random.Next(4)],
+                    CreatedAt = createdAt,
+                    UpdatedAt = createdAt,
+                    ResolvedAt = resolvedAt,
+                    ClosedAt = closedAt
+                });
+            }
+
+            await context.Bugs.AddRangeAsync(bugs);
+            await context.SaveChangesAsync();
+
+            // Add activity logs for created bugs
+            var activityLogs = bugs.Select(b => new ActivityLog
+            {
+                BugId = b.Id,
+                DeveloperId = 6, // QA User
+                Action = "created",
+                NewValue = "Bug created",
+                CreatedAt = b.CreatedAt
+            }).ToList();
+
+            await context.ActivityLogs.AddRangeAsync(activityLogs);
+            await context.SaveChangesAsync();
+        }
+    }
+}

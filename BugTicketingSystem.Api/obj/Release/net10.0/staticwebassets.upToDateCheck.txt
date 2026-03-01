@@ -1,0 +1,14 @@
+wwwroot\css\styles.css
+wwwroot\index.html
+wwwroot\js\app.js
+wwwroot\js\charts.js
+wwwroot\js\database.js
+wwwroot\js\notifications.js
+wwwroot\js\UpdatedDashBoardJS.js
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\css\styles.css
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\index.html
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\js\app.js
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\js\charts.js
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\js\database.js
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\js\notifications.js
+D:\Dev_Rifat\BugTicketingSystem\BugTicketingSystem.Api\wwwroot\js\UpdatedDashBoardJS.js

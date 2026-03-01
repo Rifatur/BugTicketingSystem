@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="BugTicketingSystem.Api/BugTicketingSystem.Api.csproj" />
+</Solution>
