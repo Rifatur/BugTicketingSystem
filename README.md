@@ -3,6 +3,7 @@
 A comprehensive, project-based bug tracking and ticketing system built with **ASP.NET Core 10 Minimal APIs** backend and a modern **TailwindCSS + jQuery** frontend.
 
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet)
+![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css)
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs)
@@ -13,13 +14,11 @@ A comprehensive, project-based bug tracking and ticketing system built with **AS
 - [Overview](#-overview)
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
-- [System Architecture](#-system-architecture)
 - [Installation](#-installation)
 - [Configuration](#-configuration)
 - [API Documentation](#-api-documentation)
 - [User Guide](#-user-guide)
 - [Workflow](#-workflow)
-- [Screenshots](#-screenshots)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -85,7 +84,7 @@ The Bug Ticketing System is a full-featured issue tracking solution designed for
 ├─────────────────────────────────────────┤
 │ Entity Framework Core 10 │
 ├─────────────────────────────────────────┤
-│ SQLite Database │
+│ SQLite Database │ Sql Server
 ├─────────────────────────────────────────┤
 │ Swagger/OpenAPI Documentation │
 └─────────────────────────────────────────┘
@@ -101,42 +100,7 @@ The Bug Ticketing System is a full-featured issue tracking solution designed for
 │ Chart.js (Analytics) │
 └─────────────────────────────────────────┘
 
-## 🏗 System Architecture
-┌────────────────────────────────────────────────────────────────┐
-│ CLIENT LAYER │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ Dashboard │ │ Tickets │ │ Reports │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ │
-│ │ Create Bug │ │ Analytics │ │Notifications │ │
-│ └──────────────┘ └──────────────┘ └──────────────┘ │
-└────────────────────────────┬───────────────────────────────────┘
-│ HTTP/REST
-┌────────────────────────────▼───────────────────────────────────┐
-│ API LAYER │
-│ ┌─────────────────────────────────────────────────────────┐ │
-│ │ ASP.NET Core 10 Minimal APIs │ │
-│ ├─────────────────────────────────────────────────────────┤ │
-│ │ /api/bugs /api/projects /api/developers │ │
-│ │ /api/dashboard /api/reports /api/notifications │ │
-│ └─────────────────────────────────────────────────────────┘ │
-└────────────────────────────┬───────────────────────────────────┘
-│
-┌────────────────────────────▼───────────────────────────────────┐
-│ SERVICE LAYER │
-│ ┌────────────┐ ┌────────────┐ ┌────────────────────┐ │
-│ │ BugService │ │ReportService│ │NotificationService│ │
-│ └────────────┘ └────────────┘ └────────────────────┘ │
-└────────────────────────────┬───────────────────────────────────┘
-│
-┌────────────────────────────▼───────────────────────────────────┐
-│ DATA LAYER │
-│ ┌─────────────────────────────────────────────────────────┐ │
-│ │ Entity Framework Core 10 │ │
-│ ├─────────────────────────────────────────────────────────┤ │
-│ │ SQLite Database │ │
-│ └─────────────────────────────────────────────────────────┘ │
-└────────────────────────────────────────────────────────────────┘
+
 
 ## 📦 Installation
 
