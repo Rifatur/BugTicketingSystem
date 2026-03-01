@@ -1,6 +1,6 @@
 ﻿# 🐛 Bug Ticketing System
 
-A comprehensive, project-based bug tracking and ticketing system built with **ASP.NET Core 10 Minimal APIs** backend and a modern **TailwindCSS + jQuery** frontend.
+project-based bug tracking and ticketing system built with **ASP.NET Core 10 Minimal APIs** backend and a modern **TailwindCSS + jQuery** frontend.
 
 ![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet)
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
