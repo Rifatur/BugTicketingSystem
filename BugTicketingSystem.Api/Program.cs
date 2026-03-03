@@ -34,27 +34,31 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Add DbContext with SQL Server
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//{
+//    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+//    options.UseSqlServer(connectionString, sqlOptions =>
+//    {
+//        sqlOptions.EnableRetryOnFailure(
+//            maxRetryCount: 5,
+//            maxRetryDelay: TimeSpan.FromSeconds(30),
+//            errorNumbersToAdd: null);
+
+//        sqlOptions.CommandTimeout(30);
+//        sqlOptions.MigrationsHistoryTable("__EFMigrationsHistory", "dbo");
+//    });
+
+//    if (builder.Environment.IsDevelopment())
+//    {
+//        options.EnableSensitiveDataLogging();
+//        options.EnableDetailedErrors();
+//    }
+//});
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-    options.UseSqlServer(connectionString, sqlOptions =>
-    {
-        sqlOptions.EnableRetryOnFailure(
-            maxRetryCount: 5,
-            maxRetryDelay: TimeSpan.FromSeconds(30),
-            errorNumbersToAdd: null);
-
-        sqlOptions.CommandTimeout(30);
-        sqlOptions.MigrationsHistoryTable("__EFMigrationsHistory", "dbo");
-    });
-
-    if (builder.Environment.IsDevelopment())
-    {
-        options.EnableSensitiveDataLogging();
-        options.EnableDetailedErrors();
-    }
-});
 
 // Add services
 builder.Services.AddScoped<ITicketIdGenerator, TicketIdGenerator>();
@@ -106,6 +110,11 @@ builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
 // Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {

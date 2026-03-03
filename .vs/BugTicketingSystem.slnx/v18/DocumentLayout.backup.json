@@ -1,149 +1,153 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dev_Rifat\\BugTicketingSystem\\",
+  "WorkspaceRootPath": "R:\\ProjectRunning\\BugTicketingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\attachmentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\attachmentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\attachmentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\wwwroot\\js\\notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\wwwroot\\js\\charts.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\wwwroot\\js\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\wwwroot\\js\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\developer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\bugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\bugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\bugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\helpers\\ticketidgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\helpers\\ticketidgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\helpers\\ticketidgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\projectendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\projectendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\projectendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\dashboardendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\dashboardendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\dashboardendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\bugendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\bugendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\bugendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\bug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\commentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\commentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\commentendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\reportendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\reportendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\reportendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\developerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\endpoints\\developerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\endpoints\\developerendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\services\\ibugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\services\\ibugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\services\\ibugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\helpers\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\helpers\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\helpers\\mappingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\dtos\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\dtos\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\dtos\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\dtos\\dashboarddtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\dtos\\developerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\dtos\\developerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\dtos\\developerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\dtos\\projectdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\dtos\\projectdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\dtos\\projectdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\dtos\\bugdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\dtos\\bugdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\dtos\\bugdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|d:\\dev_rifat\\bugticketingsystem\\bugticketingsystem.api\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|r:\\projectrunning\\bugticketingsystem\\bugticketingsystem.api\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2082457-7E56-8A42-D98B-989FB0C7ED00}|BugTicketingSystem.Api\\BugTicketingSystem.Api.csproj|solutionrelative:bugticketingsystem.api\\models\\attachment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -154,31 +158,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BugService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\BugService.cs",
-              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\BugService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\BugService.cs",
-              "RelativeToolTip": "BugTicketingSystem.Api\\Services\\BugService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQBAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Program.cs",
+              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Program.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Program.cs",
+              "RelativeToolTip": "BugTicketingSystem.Api\\Program.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwv1YAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T08:34:33.359Z"
+              "WhenOpened": "2026-03-01T18:29:39.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ReportService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\ReportService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\ReportService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\ReportService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\ReportService.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Services\\ReportService.cs",
               "ViewState": "AgIAABUBAAAAAAAAAAAQwCsBAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,63 +187,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AttachmentEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\AttachmentEndpoints.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T08:39:32.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T08:39:32.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Data\\DbInitializer.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "BugTicketingSystem.Api\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-01T06:56:13.543Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Data\\DbInitializer.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\DbInitializer.cs",
-              "RelativeToolTip": "BugTicketingSystem.Api\\Data\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BugTicketingSystem.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywAUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T06:56:13.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T07:48:35.077Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "BugTicketingSystem.Api\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAywAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T07:48:35.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.json",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.json",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\appsettings.json",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.json",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.json",
               "RelativeToolTip": "BugTicketingSystem.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-31T08:44:35.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T08:44:35.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TicketIdGenerator.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Helpers\\TicketIdGenerator.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAkwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -250,11 +247,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "index.html",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\index.html",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\wwwroot\\index.html",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\index.html",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\index.html",
               "RelativeToolTip": "BugTicketingSystem.Api\\wwwroot\\index.html",
               "ViewState": "AgIAALkCAAAAAAAAAAAswMACAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -262,24 +259,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Properties\\launchSettings.json",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Properties\\launchSettings.json",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Properties\\launchSettings.json",
               "RelativeToolTip": "BugTicketingSystem.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-17T03:59:40.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T03:59:40.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "database.js",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\database.js",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\database.js",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\wwwroot\\js\\database.js",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\database.js",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\database.js",
               "RelativeToolTip": "BugTicketingSystem.Api\\wwwroot\\js\\database.js",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAMwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -287,11 +283,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "charts.js",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
               "RelativeToolTip": "BugTicketingSystem.Api\\wwwroot\\js\\charts.js",
               "ViewState": "AgIAAAQBAAAAAAAAAAAQwBUBAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -299,11 +295,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
+              "Title": "BugService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\BugService.cs",
+              "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\BugService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\BugService.cs",
+              "RelativeToolTip": "BugTicketingSystem.Api\\Services\\BugService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-31T08:34:33.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Developer.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Developer.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Developer.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\Developer.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Developer.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Developer.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\Developer.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,11 +319,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "notifications.js",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
               "RelativeToolTip": "BugTicketingSystem.Api\\wwwroot\\js\\notifications.js",
               "ViewState": "AgIAAG0AAAAAAAAAAAAQwIEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -323,11 +331,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "app.js",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\app.js",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\app.js",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\wwwroot\\js\\app.js",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\app.js",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\wwwroot\\js\\app.js",
               "RelativeToolTip": "BugTicketingSystem.Api\\wwwroot\\js\\app.js",
               "ViewState": "AgIAAJMDAAAAAAAAAAAQwKcDAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
@@ -335,11 +343,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.Development.json",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\appsettings.Development.json",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.Development.json",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\appsettings.Development.json",
               "RelativeToolTip": "BugTicketingSystem.Api\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -347,11 +355,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Notification.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Notification.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\Notification.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Notification.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Notification.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\Notification.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA+wAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -359,11 +367,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "BugEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\BugEndpoints.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -371,11 +379,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DashboardEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\DashboardEndpoints.cs",
               "ViewState": "AgIAAKYAAAAAAAAAAAAQwNIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Bug.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Bug.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Bug.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\Bug.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Bug.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Bug.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\Bug.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAwwCAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -395,11 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ProjectEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\ProjectEndpoints.cs",
               "ViewState": "AgIAAB4AAAAAAAAAACBjwHgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -407,11 +415,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CommentEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\CommentEndpoints.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAQwHoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -419,11 +427,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ReportEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\ReportEndpoints.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -431,11 +439,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DeveloperEndpoints.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Endpoints\\DeveloperEndpoints.cs",
               "ViewState": "AgIAAG0AAAAAAAAAAAAQwIcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -443,11 +451,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "NotificationService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\NotificationService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\NotificationService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\NotificationService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\NotificationService.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Services\\NotificationService.cs",
               "ViewState": "AgIAADwAAAAAAAAAACBjwEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -455,11 +463,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "INotificationService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\INotificationService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\INotificationService.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\INotificationService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\INotificationService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\INotificationService.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Services\\INotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -467,11 +475,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "IReportService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IReportService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IReportService.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\IReportService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IReportService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IReportService.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Services\\IReportService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -479,11 +487,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IBugService.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IBugService.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IBugService.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Services\\IBugService.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IBugService.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Services\\IBugService.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Services\\IBugService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -491,11 +499,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "MappingExtensions.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Helpers\\MappingExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -503,11 +511,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ReportDTOs.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\DTOs\\ReportDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -515,11 +523,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "DashboardDTOs.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\DTOs\\DashboardDTOs.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAQwEMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -527,11 +535,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "DeveloperDTOs.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\DTOs\\DeveloperDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -539,11 +547,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ProjectDTOs.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\DTOs\\ProjectDTOs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAwBkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,11 +559,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "BugDTOs.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\DTOs\\BugDTOs.cs",
               "ViewState": "AgIAAJMAAAAAAAAAAAAQwKMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -563,11 +571,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Module.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Module.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Module.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\Module.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Module.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Module.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\Module.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -575,11 +583,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ActivityLog.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\ActivityLog.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\ActivityLog.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\ActivityLog.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\ActivityLog.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\ActivityLog.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\ActivityLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -587,11 +595,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Attachment.cs",
-              "DocumentMoniker": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Attachment.cs",
+              "DocumentMoniker": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Attachment.cs",
               "RelativeDocumentMoniker": "BugTicketingSystem.Api\\Models\\Attachment.cs",
-              "ToolTip": "D:\\Dev_Rifat\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Attachment.cs",
+              "ToolTip": "R:\\ProjectRunning\\BugTicketingSystem\\BugTicketingSystem.Api\\Models\\Attachment.cs",
               "RelativeToolTip": "BugTicketingSystem.Api\\Models\\Attachment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
