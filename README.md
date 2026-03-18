@@ -73,26 +73,18 @@ The Bug Ticketing System is a full-featured issue tracking solution designed for
 ## 🛠 Tech Stack
 
 ### Backend
-┌─────────────────────────────────────────┐
-│ ASP.NET Core 10 Minimal APIs │
-├─────────────────────────────────────────┤
-│ Entity Framework Core 10 │
-├─────────────────────────────────────────┤
-│ SQLite Database │ Sql Server
-├─────────────────────────────────────────┤
-│ Swagger/OpenAPI Documentation │
-└─────────────────────────────────────────┘
+
+ASP.NET Core 10 Minimal APIs 
+Entity Framework Core 10 
+SQLite Database  Sql Server
+Swagger/OpenAPI Documentation 
+
 
 ### Frontend
-┌─────────────────────────────────────────┐
-│ HTML5 / CSS3 │
-├─────────────────────────────────────────┤
-│ TailwindCSS + Custom CSS │
-├─────────────────────────────────────────┤
-│ jQuery 3.7.1 │
-├─────────────────────────────────────────┤
-│ Chart.js (Analytics) │
-└─────────────────────────────────────────┘
+HTML5 / CSS3 
+TailwindCSS + Custom CSS 
+jQuery 3.7.1 
+Chart.js (Analytics) 
 
 
 
